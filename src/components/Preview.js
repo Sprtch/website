@@ -2,8 +2,10 @@ import React from "react";
 import { Button, Card, CardTitle, CardText, CardLink } from "reactstrap";
 import { Link } from "react-router-dom";
 import { H2, Text } from "./Titles.js";
+import { useTranslation } from "react-i18next";
 
-export default props => {
+export default (props) => {
+  const { t } = useTranslation();
   return (
     <Card body>
       <CardTitle className="text-center">
@@ -14,7 +16,7 @@ export default props => {
       </CardText>
       <CardLink>
         <Link to={props.href}>
-          <Button block>Lire la suite</Button>
+          <Button block>{t("readMore")}</Button>
         </Link>
       </CardLink>
     </Card>
