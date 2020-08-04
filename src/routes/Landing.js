@@ -172,9 +172,7 @@ export default () => {
           columns={4}
         />
       </Separator>
-      <div id="location">
-        <Map fullWidth />
-      </div>
+      <Map fullWidth id="location" />
       <section className="section section-lg section-shaped pg-250 color-main">
         <div id="contact" className="h-100">
           <Row className="align-items-center">

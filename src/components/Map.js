@@ -103,11 +103,11 @@ const Location = () => (
   </Map>
 );
 
-export default ({ fullWidth }) => {
+export default ({ fullWidth, id }) => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div id={id}>
       {fullWidth ? <Separator title={t("mapFindUs")} /> : null}
       <section className="section section-lg section-shaped pg-250" id="#map">
         <div className="h-100">
@@ -153,6 +153,6 @@ export default ({ fullWidth }) => {
           </Row>
         </div>
       </section>
-    </>
+    </div>
   );
 };
