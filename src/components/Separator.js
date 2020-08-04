@@ -19,11 +19,14 @@ export const Sep = styled.div`
   }
 `;
 
-export default ({ title, background, children }) => {
+export default ({ title, background, id, children }) => {
+  const style = background
+    ? { backgroundImage: "url(" + background + ")" }
+    : {};
   return (
-    <>
-      <div style={{ backgroundImage: "url(" + background + ")" }}>
-        <Sep className="h-100" background>
+    <div id={id}>
+      <div style={style}>
+        <Sep background={background} className="h-100">
           <Row className="align-items-center text-center w-100">
             <H1 className="w-100">{title}</H1>
           </Row>
@@ -34,6 +37,6 @@ export default ({ title, background, children }) => {
           {children}
         </section>
       ) : null}
-    </>
+    </div>
   );
 };

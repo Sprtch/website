@@ -38,8 +38,8 @@ export default () => {
       <Separator
         title={t("news")}
         background={require("../assets/img/banner1.jpg")}
-      />
-      <div id="news">
+        id="news"
+      >
         <Slider
           infinite={true}
           slidesToShow={posts.length > 3 ? 3 : posts.length}
@@ -49,132 +49,128 @@ export default () => {
             <Preview {...post} />
           ))}
         </Slider>
-      </div>
+      </Separator>
       <Separator
         title={t("companySection")}
         background={require("../assets/img/banner2.jpg")}
-      />
-      <section className="section section-lg section-shaped pg-250">
-        <div className="h-100" id="company">
-          <Row className="align-items-center">
-            <Center>
-              <Text>{t("companyText")}</Text>
-            </Center>
-          </Row>
-        </div>
-      </section>
+        id="company"
+      >
+        <Row className="align-items-center">
+          <Center>
+            <Text>{t("companyText")}</Text>
+          </Center>
+        </Row>
+      </Separator>
       <Separator
         title={t("productsSection")}
         background={require("../assets/img/banner3.jpg")}
+        id="products"
       >
-        <div className="h-100" id="">
-          <Row className="align-items-center">
-            <Center>
-              <Text>{t("productsSectionText")}</Text>
-            </Center>
-          </Row>
-          <ThumbnailHolder
-            content={[
-              {
-                title: t("productsSectionSetupSeparator"),
-                img: require("../assets/img/products/1.jpg"),
-                desc: t("productsSectionSetupSeparatorDesc"),
-                full: true,
-              },
-              {
-                title: t("productsSectionScreens"),
-                img: require("../assets/img/products/2.jpg"),
-                desc: t("productsSectionScreensDesc"),
-                modal: t("productsSectionScreensDescModal"),
-                full: true,
-              },
-              {
-                title: t("productsSectionSpareParts"),
-                img: require("../assets/img/products/3.jpg"),
-                desc: t("productsSectionSparePartsDesc"),
-                modal: t("productsSectionSparePartsDescModal"),
-                full: true,
-              },
-              {
-                title: t("productsSectionMachines"),
-                img: require("../assets/img/products/4.jpg"),
-                full: true,
-              },
-            ]}
-            columns={2}
-          />
-        </div>
+        <Row className="align-items-center">
+          <Center>
+            <Text>{t("productsSectionText")}</Text>
+          </Center>
+        </Row>
+        <ThumbnailHolder
+          content={[
+            {
+              title: t("productsSectionSetupSeparator"),
+              img: require("../assets/img/products/1.jpg"),
+              desc: t("productsSectionSetupSeparatorDesc"),
+              full: true,
+            },
+            {
+              title: t("productsSectionScreens"),
+              img: require("../assets/img/products/2.jpg"),
+              desc: t("productsSectionScreensDesc"),
+              modal: t("productsSectionScreensDescModal"),
+              full: true,
+            },
+            {
+              title: t("productsSectionSpareParts"),
+              img: require("../assets/img/products/3.jpg"),
+              desc: t("productsSectionSparePartsDesc"),
+              modal: t("productsSectionSparePartsDescModal"),
+              full: true,
+            },
+            {
+              title: t("productsSectionMachines"),
+              img: require("../assets/img/products/4.jpg"),
+              full: true,
+            },
+          ]}
+          columns={2}
+        />
       </Separator>
       <Separator
         title={t("applicationSection")}
         background={require("../assets/img/banner4.jpg")}
+        id="applications"
       >
-        <div className="h-100" id="">
-          <ThumbnailHolder
-            content={[
-              {
-                title: t("industryAnimalFeed"),
-                img: require("../assets/img/industries/animal.svg"),
-                desc: t("industryAnimalFeedDesc"),
-              },
-              {
-                title: t("industryRecycling"),
-                img: ["fas", "recycle"],
-                desc: t("industryRecyclingDesc"),
-              },
-              {
-                title: t("industryMetal"),
-                img: require("../assets/img/industries/steel.svg"),
-                desc: t("industryMetalDesc"),
-              },
-              {
-                title: t("industryPolymer"),
-                img: require("../assets/img/industries/polymer.svg"),
-                desc: t("industryPolymerDesc"),
-              },
-              {
-                title: t("industryChemistry"),
-                img: require("../assets/img/industries/chemistry.svg"),
-                desc: t("industryChemistryDesc"),
-              },
-              {
-                title: t("industryAutomotive"),
-                img: ["fas", "plane"],
-              },
-              {
-                title: t("industryFood"),
-                img: require("../assets/img/industries/food.svg"),
-              },
-              {
-                title: t("industryCoating"),
-                img: ["fas", "paint-roller"],
-              },
-              {
-                title: t("industryOils"),
-                img: ["fas", "oil-can"],
-                desc: t("industryOilsDesc"),
-              },
-              {
-                title: t("industryCeramics"),
-                img: require("../assets/img/industries/ceramic.svg"),
-                desc: t("industryCeramicsDesc"),
-              },
-              {
-                title: t("industryPharmaceutical"),
-                img: ["fas", "prescription-bottle-alt"],
-              },
-              {
-                title: t("industryMineral"),
-                img: ["far", "gem"],
-              },
-              {
-                title: t("industryFertilizers"),
-                img: require("../assets/img/industries/fertilizer.svg"),
-              },
-            ]}
-            columns={4}
-          />
-        </div>
+        <ThumbnailHolder
+          content={[
+            {
+              title: t("industryAnimalFeed"),
+              img: require("../assets/img/industries/animal.svg"),
+              desc: t("industryAnimalFeedDesc"),
+            },
+            {
+              title: t("industryRecycling"),
+              img: ["fas", "recycle"],
+              desc: t("industryRecyclingDesc"),
+            },
+            {
+              title: t("industryMetal"),
+              img: require("../assets/img/industries/steel.svg"),
+              desc: t("industryMetalDesc"),
+            },
+            {
+              title: t("industryPolymer"),
+              img: require("../assets/img/industries/polymer.svg"),
+              desc: t("industryPolymerDesc"),
+            },
+            {
+              title: t("industryChemistry"),
+              img: require("../assets/img/industries/chemistry.svg"),
+              desc: t("industryChemistryDesc"),
+            },
+            {
+              title: t("industryAutomotive"),
+              img: ["fas", "plane"],
+            },
+            {
+              title: t("industryFood"),
+              img: require("../assets/img/industries/food.svg"),
+            },
+            {
+              title: t("industryCoating"),
+              img: ["fas", "paint-roller"],
+            },
+            {
+              title: t("industryOils"),
+              img: ["fas", "oil-can"],
+              desc: t("industryOilsDesc"),
+            },
+            {
+              title: t("industryCeramics"),
+              img: require("../assets/img/industries/ceramic.svg"),
+              desc: t("industryCeramicsDesc"),
+            },
+            {
+              title: t("industryPharmaceutical"),
+              img: ["fas", "prescription-bottle-alt"],
+            },
+            {
+              title: t("industryMineral"),
+              img: ["far", "gem"],
+            },
+            {
+              title: t("industryFertilizers"),
+              img: require("../assets/img/industries/fertilizer.svg"),
+            },
+          ]}
+          columns={4}
+        />
       </Separator>
       <div id="location">
         <Map fullWidth />

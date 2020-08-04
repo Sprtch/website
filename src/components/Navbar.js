@@ -56,7 +56,7 @@ export default () => {
                 <NavLinkD to="/#news">{t("news")}</NavLinkD>
                 <NavLinkD to="/#company">{t("companySection")}</NavLinkD>
                 <NavLinkD to="/#products">{t("productsSection")}</NavLinkD>
-                <NavLinkD to="/#application">
+                <NavLinkD to="/#applications">
                   {t("applicationSection")}
                 </NavLinkD>
                 <NavLinkD to="/#location">{t("mapFindUs")}</NavLinkD>
