@@ -20,11 +20,10 @@ library.add(fas);
 library.add(far);
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!./assets/css/variables.scss'); // eslint-disable-line
-console.log(theme);
 
 export default () => {
   return (
-    <Router basename="/">
+    <Router basename="/website">
       <ThemeProvider theme={theme}>
         <Helmet></Helmet>
 
