@@ -2,7 +2,7 @@
   "name": "separtech",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://separtech.com",
+  "homepage": "https://sprtch.github.io/website",
   "license": "mit",
   "dependencies": {
     "@fortawesome/fontawesome-free-regular": "^5.0.13",
