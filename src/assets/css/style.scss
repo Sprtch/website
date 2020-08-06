@@ -48,8 +48,11 @@ html {
   background-color: $primary;
 }
 
-.headroom--pinned {
+.headroom {
   z-index: 3 !important;
+}
+
+.headroom--pinned {
   background-color: $primary;
 }
 

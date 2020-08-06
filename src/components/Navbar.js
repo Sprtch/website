@@ -33,7 +33,7 @@ export default () => {
   return (
     <Headroom>
       <Navbar
-        className="navbar-main navbar-transparent navbar-light headroom"
+        className="navbar-main navbar-light headroom"
         expand="lg"
         id="navbar-main"
       >
