@@ -26,7 +26,7 @@ const ThumbnailCard = styled(Card)`
   :hover {
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    border: 1px solid #cccccc;
+    border: 1px solid ${(props) => props.theme.light};
     background-color: white;
   }
 `;
@@ -114,7 +114,7 @@ const Thumbnail = ({ title, img, desc, button, full, modal }) => {
           <ThumbnailLogo
             style={{
               filter:
-                "invert(81%) sepia(25%) saturate(389%) hue-rotate(116deg) brightness(91%) contrast(79%)",
+                "invert(61%) sepia(39%) saturate(684%) hue-rotate(125deg) brightness(86%) contrast(84%)",
             }}
             src={img}
             top
