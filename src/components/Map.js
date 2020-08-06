@@ -98,7 +98,7 @@ const Location = () => (
     zoomControl={false}
     attributionControl={false}
   >
-    <TileLayer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png" />
+    <TileLayer url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png" />
     <Marker position={SETTINGS.location.position} icon={MarkerIcon} />
   </Map>
 );
