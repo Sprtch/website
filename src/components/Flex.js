@@ -15,3 +15,16 @@ export const Page = styled.div`
 export const Footer = styled.footer`
   flex: 0 1 40px;
 `;
+
+export const PageHeightCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    height: 20vh;
+  }
+  @media (min-width: 992px) {
+    height: 80vh;
+  }
+`;

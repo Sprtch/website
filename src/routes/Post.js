@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row, Spinner } from "reactstrap";
-import { H3 } from "../components/Titles";
+import { H1 } from "../components/Titles";
 import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Page } from "../components/Flex";
+import { Page, PageHeightCenter } from "../components/Flex";
 
 export default withRouter((props) => {
   const [page, setPage] = useState(null);
@@ -31,19 +31,12 @@ export default withRouter((props) => {
               alignSelf: "stretch",
             }}
           >
-            <div
-              style={{
-                height: "80vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <H3>{page.title}</H3>
-            </div>
+            <PageHeightCenter>
+              <H1>{page.title}</H1>
+            </PageHeightCenter>
           </Col>
           <Col lg="8">
-            <Container>
+            <Container style={{ paddingTop: "40px" }}>
               <div dangerouslySetInnerHTML={{ __html: page.bodyHtml }}></div>
             </Container>
           </Col>
