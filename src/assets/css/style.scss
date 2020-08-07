@@ -12,7 +12,13 @@
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+      flex-direction: column;
+        min-height: 100vh;
 }
 
 .color-main {
@@ -43,6 +49,10 @@ html {
 .slick-next:before {
     color: $color-main !important;
   }
+
+.headroom-wrapper {
+  flex: 0 1 93px;
+}
 
 .headroom--unfixed {
   background-color: $primary;

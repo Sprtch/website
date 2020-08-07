@@ -8,7 +8,8 @@ import far from "@fortawesome/fontawesome-free-regular";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Helmet from "react-helmet";
-import { Landing, NotFound, Post } from "./routes";
+import { Contact, Landing, NotFound, Post } from "./routes";
+import { Root } from "./components/Flex";
 
 import "./assets/css/style.scss";
 import "slick-carousel/slick/slick.css";
@@ -27,25 +28,32 @@ export default () => {
       <ThemeProvider theme={theme}>
         <Helmet></Helmet>
 
-        <Navbar />
+        <Root>
+          <Navbar />
 
-        <Switch>
-          <Route path="/" exact>
-            <Suspense fallback={<Spinner />}>
-              <Landing />
-            </Suspense>
-          </Route>
-          <Route path="/posts/:article">
-            <Suspense fallback={<Spinner />}>
-              <Post />
-            </Suspense>
-          </Route>
-          <Route>
-            <NotFound />
-          </Route>
-        </Switch>
+          <Switch>
+            <Route path="/" exact>
+              <Suspense fallback={<Spinner />}>
+                <Landing />
+              </Suspense>
+            </Route>
+            <Route path="/Contact" exact>
+              <Suspense fallback={<Spinner />}>
+                <Contact />
+              </Suspense>
+            </Route>
+            <Route path="/posts/:article">
+              <Suspense fallback={<Spinner />}>
+                <Post />
+              </Suspense>
+            </Route>
+            <Route>
+              <NotFound />
+            </Route>
+          </Switch>
 
-        <Footer />
+          <Footer />
+        </Root>
       </ThemeProvider>
     </Router>
   );

@@ -3,6 +3,7 @@ import { Col, Container, Row, Spinner } from "reactstrap";
 import { H3 } from "../components/Titles";
 import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { Page } from "../components/Flex";
 
 export default withRouter((props) => {
   const [page, setPage] = useState(null);
@@ -18,27 +19,36 @@ export default withRouter((props) => {
 
   if (page) {
     return (
-      <>
+      <Page>
         <Helmet>
           <title>{page.title}</title>
         </Helmet>
-        <div className="h-100">
-          <Row className="w-100">
-            <Col
-              style={{ paddingTop: "300px", paddingBottom: "100px" }}
-              lg="4"
-              className="text-center color-main font-white"
+        <Row className="w-100 h-100" style={{ alignItems: "center" }}>
+          <Col
+            lg="4"
+            className="color-main font-white"
+            style={{
+              alignSelf: "stretch",
+            }}
+          >
+            <div
+              style={{
+                height: "80vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
               <H3>{page.title}</H3>
-            </Col>
-            <Col style={{ marginTop: "100px" }} lg="8">
-              <Container>
-                <div dangerouslySetInnerHTML={{ __html: page.bodyHtml }}></div>
-              </Container>
-            </Col>
-          </Row>
-        </div>
-      </>
+            </div>
+          </Col>
+          <Col lg="8">
+            <Container>
+              <div dangerouslySetInnerHTML={{ __html: page.bodyHtml }}></div>
+            </Container>
+          </Col>
+        </Row>
+      </Page>
     );
   } else {
     return (
