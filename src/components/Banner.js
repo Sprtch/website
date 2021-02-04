@@ -60,7 +60,12 @@ export default () => {
         >
           <img
             className="img-fluid fade-in w-50"
-            style={{ padding: "0 50px", maxWidth: "80%" }}
+            style={{
+              padding: "0 50px",
+              maxWidth: "80%",
+              "-webkit-filter": "drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5))",
+              filter: "drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5))",
+            }}
             src={require("../assets/img/logo_full_white.svg")}
             alt=""
           />
