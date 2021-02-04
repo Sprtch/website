@@ -1,6 +1,4 @@
 import React from "react";
-import { Gradient } from "./Images.js";
-import { Row } from "reactstrap";
 import styled from "styled-components";
 import { rgba } from "polished";
 
@@ -63,7 +61,7 @@ export default () => {
           <img
             className="img-fluid fade-in w-50"
             style={{ padding: "0 50px", maxWidth: "80%" }}
-            src={require("../assets/img/logo_full.svg")}
+            src={require("../assets/img/logo_full_white.svg")}
             alt=""
           />
         </div>
