@@ -35,21 +35,23 @@ export default () => {
         </title>
       </Helmet>
       <Banner />
-      <Separator
-        title={t("news")}
-        background={require("../assets/img/banner1.jpg")}
-        id="news"
-      >
-        <Slider
-          infinite={true}
-          slidesToShow={posts.length > 3 ? 3 : posts.length}
-          dots={true}
+      {posts.length ? (
+        <Separator
+          title={t("news")}
+          background={require("../assets/img/banner1.jpg")}
+          id="news"
         >
-          {posts.map((post) => (
-            <Preview {...post} />
-          ))}
-        </Slider>
-      </Separator>
+          <Slider
+            infinite={true}
+            slidesToShow={posts.length > 3 ? 3 : posts.length}
+            dots={true}
+          >
+            {posts.map((post) => (
+              <Preview {...post} />
+            ))}
+          </Slider>
+        </Separator>
+      ) : null}
       <Separator
         title={t("companySection")}
         background={require("../assets/img/banner2.jpg")}
