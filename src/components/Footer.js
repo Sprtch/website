@@ -1,5 +1,5 @@
 import React from "react";
-import { NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
+import { NavItem, Nav, Container, Row, Col } from "reactstrap";
 import NavSocial from "./NavSocial";
 import SETTINGS from "../settings";
 import { Footer } from "../components/Flex";
