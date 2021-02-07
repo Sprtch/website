@@ -37,7 +37,7 @@ export default () => {
       <Background className="align-items-center h-100 w-100">
         <video
           playinline="playsinline"
-          autoplay="autoplay"
+          autoPlay="autoplay"
           muted="muted"
           loop="loop"
           style={{
