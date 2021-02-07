@@ -37,14 +37,12 @@ export default () => {
         expand="lg"
         id="navbar-main"
       >
-        <NavbarBrand to="/">
-          <Link to="/">
-            <img
-              alt={SETTINGS.title}
-              src={require("../assets/img/logo_white.svg")}
-            />
-          </Link>
-        </NavbarBrand>
+        <Link className="navbar-brand" to="/">
+          <img
+            alt={SETTINGS.title}
+            src={require("../assets/img/logo_white.svg")}
+          />
+        </Link>
         <button className="navbar-toggler" id="navbar_global">
           <span className="navbar-toggler-icon" />
         </button>
