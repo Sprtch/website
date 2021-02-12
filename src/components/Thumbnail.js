@@ -141,15 +141,20 @@ export default ({ content, columns }) => {
 
   return (
     <ThumbnailSection>
-      <Row>
-        {rows.map((row) =>
-          row.map((x) => (
-            <Col className="py-2" xs="12" md={Math.floor(12 / columns)}>
-              <Thumbnail {...x} />
+      {rows.map((row, index) => (
+        <Row key={`ts-${columns}-row-${index}`}>
+          {row.map((x) => (
+            <Col
+              key={`ts-${columns}-col-${x.title}`}
+              className="py-2"
+              xs="12"
+              md={Math.floor(12 / columns)}
+            >
+              <Thumbnail key={`ts-${columns}-thumbnail-${x.title}`} {...x} />
             </Col>
-          ))
-        )}
-      </Row>
+          ))}
+        </Row>
+      ))}
     </ThumbnailSection>
   );
 };
