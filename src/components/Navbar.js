@@ -2,7 +2,6 @@ import React from "react";
 import Headroom from "react-headroom";
 import {
   UncontrolledCollapse,
-  NavbarBrand,
   Navbar,
   NavItem,
   UncontrolledDropdown,
