@@ -13,7 +13,7 @@
     "@phuocng/react-pdf-viewer": "^1.4.0",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.6.0",
+    "@testing-library/user-event": "^13.0.1",
     "bootstrap": "^4.5.3",
     "headroom.js": "^0.12.0",
     "i18next": "^19.8.4",
