@@ -16,7 +16,7 @@
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
     "headroom.js": "^0.12.0",
-    "i18next": "^19.8.4",
+    "i18next": "^20.2.1",
     "i18next-browser-languagedetector": "^6.0.1",
     "i18next-http-backend": "^1.0.21",
     "leaflet": "^1.7.1",
