@@ -3,7 +3,7 @@ import { Center, H3, Text } from "./Titles.js";
 import { Card, CardText, Col, Row } from "reactstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Map, Marker, TileLayer } from "react-leaflet";
+import { MapContainer as Map, Marker, TileLayer } from "react-leaflet";
 import Separator from "./Separator";
 import { useTranslation } from "react-i18next";
 import L from "leaflet";
