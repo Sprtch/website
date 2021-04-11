@@ -3,7 +3,7 @@ import { H3, Text } from "../components/Titles.js";
 import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 
-export default () => {
+const NotFound = () => {
   return (
     <>
       <Helmet>
@@ -26,3 +26,5 @@ export default () => {
     </>
   );
 };
+
+export default NotFound;

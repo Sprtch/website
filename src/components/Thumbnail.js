@@ -134,7 +134,7 @@ const Thumbnail = ({ title, img, desc, button, full, modal }) => {
   );
 };
 
-export default ({ content, columns }) => {
+const ThumbnailWrapper = ({ content, columns }) => {
   const rows = new Array(Math.ceil(content.length / columns))
     .fill()
     .map((_) => content.splice(0, columns));
@@ -158,3 +158,5 @@ export default ({ content, columns }) => {
     </ThumbnailSection>
   );
 };
+
+export default ThumbnailWrapper;

@@ -27,7 +27,7 @@ const NavLinkD = ({ to, children }) => (
   </NavHashLink>
 );
 
-export default () => {
+const AppNavBar = () => {
   const { t } = useTranslation();
   return (
     <Headroom>
@@ -70,3 +70,5 @@ export default () => {
     </Headroom>
   );
 };
+
+export default AppNavBar;

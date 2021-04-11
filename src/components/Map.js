@@ -3,7 +3,7 @@ import { Center, H3, Text } from "./Titles.js";
 import { Card, CardText, Col, Row } from "reactstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { MapContainer as Map, Marker, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import Separator from "./Separator";
 import { useTranslation } from "react-i18next";
 import L from "leaflet";
@@ -91,7 +91,7 @@ const AddressDetails = () => (
 );
 
 const Location = () => (
-  <Map
+  <MapContainer
     style={{ zIndex: -1, width: "100%", height: "500px" }}
     center={SETTINGS.location.position}
     zoom={16}
@@ -100,10 +100,10 @@ const Location = () => (
   >
     <TileLayer url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png" />
     <Marker position={SETTINGS.location.position} icon={MarkerIcon} />
-  </Map>
+  </MapContainer>
 );
 
-export default ({ fullWidth, id }) => {
+const Map = ({ fullWidth, id }) => {
   const { t } = useTranslation();
 
   return (
@@ -156,3 +156,5 @@ export default ({ fullWidth, id }) => {
     </div>
   );
 };
+
+export default Map;

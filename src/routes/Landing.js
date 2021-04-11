@@ -15,7 +15,7 @@ import { Col, Row } from "reactstrap";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
-export default () => {
+const Landing = () => {
   let SUMMARY_JSON = null;
   try {
     SUMMARY_JSON = require("../assets/posts/summary.json");
@@ -196,3 +196,5 @@ export default () => {
     </span>
   );
 };
+
+export default Landing;

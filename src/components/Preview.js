@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { H2, Text } from "./Titles.js";
 import { useTranslation } from "react-i18next";
 
-export default (props) => {
+const Preview = (props) => {
   const { t } = useTranslation();
   return (
     <Card body>
@@ -22,3 +22,5 @@ export default (props) => {
     </Card>
   );
 };
+
+export default Preview;

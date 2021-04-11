@@ -3,7 +3,7 @@ import { NavItem, NavLink, UncontrolledTooltip } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SETTINGS from "../settings";
 
-export default ({ color }) => (
+const NavSocial = ({ color }) => (
   <>
     {SETTINGS.contact.facebook && (
       <NavItem>
@@ -92,3 +92,5 @@ export default ({ color }) => (
     )}
   </>
 );
+
+export default NavSocial;

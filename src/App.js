@@ -22,7 +22,7 @@ library.add(far);
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!./assets/css/variables.scss'); // eslint-disable-line
 
-export default () => {
+const App = () => {
   return (
     <Router basename="/website">
       <ThemeProvider theme={theme}>
@@ -58,3 +58,5 @@ export default () => {
     </Router>
   );
 };
+
+export default App;

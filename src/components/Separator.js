@@ -19,7 +19,7 @@ export const Sep = styled.div`
   }
 `;
 
-export default ({ title, background, id, children }) => {
+const Separator = ({ title, background, id, children }) => {
   const style = background
     ? { backgroundImage: "url(" + background + ")" }
     : {};
@@ -40,3 +40,5 @@ export default ({ title, background, id, children }) => {
     </div>
   );
 };
+
+export default Separator;

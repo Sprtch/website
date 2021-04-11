@@ -1,7 +1,7 @@
 /**
  * contain some general infos that can be used in other files
  */
-export default {
+const settings = {
   title: process.env.REACT_APP_WEBSITE_TITLE,
   short_title: process.env.REACT_APP_WEBSITE_SHORT_TITLE,
   subtitle: process.env.REACT_APP_WEBSITE_SUBTITLE,
@@ -23,3 +23,5 @@ export default {
     linkedin: "https://www.linkedin.com/company/separtech-sprl/",
   },
 };
+
+export default settings;

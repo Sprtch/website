@@ -23,7 +23,7 @@ const Background = styled.div`
   }
 `;
 
-export default () => {
+const Banner = () => {
   return (
     <header
       className="ui-section -hero section section-lg section-shaped pg-250"
@@ -74,3 +74,5 @@ export default () => {
     </header>
   );
 };
+
+export default Banner;

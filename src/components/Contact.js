@@ -4,7 +4,7 @@ import { Button, Form, FormGroup, Input } from "reactstrap";
 import { useTranslation } from "react-i18next";
 import SETTINGS from "../settings";
 
-export default () => {
+const Contact = () => {
   const { t } = useTranslation();
   return (
     <Center>
@@ -45,3 +45,5 @@ export default () => {
     </Center>
   );
 };
+
+export default Contact;

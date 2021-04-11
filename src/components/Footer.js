@@ -4,7 +4,7 @@ import NavSocial from "./NavSocial";
 import SETTINGS from "../settings";
 import { Footer } from "../components/Flex";
 
-export default () => {
+const AppFooter = () => {
   return (
     <Footer className="footer">
       <Container>
@@ -23,3 +23,5 @@ export default () => {
     </Footer>
   );
 };
+
+export default AppFooter;

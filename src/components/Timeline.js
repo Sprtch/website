@@ -32,7 +32,7 @@ const Enhance = ({ src }) => {
   );
 };
 
-export default ({ timeline }) => {
+const Timeline = ({ timeline }) => {
   return (
     <ul className="timeline">
       {timeline.map((e, i) => (
@@ -87,3 +87,5 @@ export default ({ timeline }) => {
     </ul>
   );
 };
+
+export default Timeline;
