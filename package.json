@@ -28,7 +28,7 @@
     "react-headroom": "^3.1.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.8.5",
-    "react-leaflet": "^3.1.0",
+    "react-leaflet": "^3.2.1",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
